@@ -1,20 +1,28 @@
 = [.underline]#Domeinregels#
 
-=== *DR_EVP - Exemplaar is Verhuurbaar gedurende Periode*
 
-[source, indent=1]
-   
-Een exemplaar is verhuurbaar gedurende een periode, als het elke dag in die periode verhuurbaar is.
+=== Domeinregels met betrekking op Exemplaren.
 
-=== *DR_KEP - Kost van een Exemplaar voor een Periode*
+*#DR_EVP# - Exemplaar is Verhuurbaar gedurende Periode*::
+  
+ Een exemplaar is verhuurbaar gedurende een periode, als het elke dag in die periode verhuurbaar is.
+
+
+=== Domeinregels met betrekking op Kosten.
+
+*#DR_KEP# - Kost van een Exemplaar voor een Periode*::
 
 De kost van een verhuring over een periode is gelijk aan het product van de dagprijs voor de eerste dag van de periode en het aantal dagen in die periode. 
 De dag waarop het exemplaar moet teruggebracht worden telt hierbij niet mee.
 
-=== *DR_VEV - Verhuur van een Exemplaar voor Volwassenen*
+
+=== Domeinregels met betrekking op Verhuring.
+
+*#DR_VEV# - Verhuur van een Exemplaar voor Volwassenen*::
 
 Een volwassenenfilm kan enkel door meerderjarigen gehuurd worden (i.e. 18 jaar of ouder).
 
-=== *DR_VPS - Verhuurperiode en SluitingsDagen*
+*#DR_VPS# - Verhuurperiode en SluitingsDagen*::
+
 Exemplaren moeten steeds tijdig teruggebracht kunnen worden m.b.t. voorziene sluitingsdagen. 
 De verhuurperiode mag dus niet eindigen op de dag vóór zo'n sluitingsdag.
