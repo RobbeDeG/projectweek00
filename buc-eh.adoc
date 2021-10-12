@@ -68,7 +68,7 @@ gevraagde periode.
 . De use case gaat verder in stap 4 van het basispad.
 
 _Merk op dat een gelijkwaardig exemplaar zoeken in alternatief C, zinloos zou zijn
-vermits *DR_EVD* uitgedrukt is in termen van (alle) gelijkwaardige exemplaren._
+vermits xref:domeinregels.adoc[*DR_EVD*] uitgedrukt is in termen van (alle) gelijkwaardige exemplaren._
 
 *Alternatief D : Exemplaar moet teruggebracht worden op sluitingsdag.*
 [start=6]

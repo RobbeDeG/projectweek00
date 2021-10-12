@@ -3,6 +3,12 @@
 
 === Domeinregels met betrekking op Exemplaren.
 
+*#DR_EVD# - Exemplaar is Verhuurbaar op Dag*::
+
+Een exemplaar is verhuurbaar op een dag indien het bruikbaar is, die dag niet verhuurd is en het aantal (andere bruikbare en niet-verhuurde) 
+gelijkwaardige exemplaren groter of gelijk is aan het aantal (openstaande) passende concurrerende reservaties die dag.
+(Merk op dat dit betekent dat ofwel álle bruikbare en niet-verhuurde gelijkwaardige exemplaren op die dag verhuurbaar zijn ofwel geen enkele)
+
 *#DR_EVP# - Exemplaar is Verhuurbaar gedurende Periode*::
   
  Een exemplaar is verhuurbaar gedurende een periode, als het elke dag in die periode verhuurbaar is.
@@ -26,3 +32,4 @@ Een volwassenenfilm kan enkel door meerderjarigen gehuurd worden (i.e. 18 jaar o
 
 Exemplaren moeten steeds tijdig teruggebracht kunnen worden m.b.t. voorziene sluitingsdagen. 
 De verhuurperiode mag dus niet eindigen op de dag vóór zo'n sluitingsdag.
+
