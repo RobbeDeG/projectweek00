@@ -1,0 +1,85 @@
+*BUC_EH - Exemplaar Huren*::
+
+De klant probeert een exemplaar te huren gedurende een bepaalde periode. Er
+moet nagegaan worden of dit mogelijk is en een kost op de lopende rekening
+geplaatst worden.
+
+*Actors*::
+
+*Klant*, medewerker
+
+*Preconditie*::
+
+Klant is geïdentificeerd
+
+*Basis pad*::
+
+. De *klant* wil een exemplaar huren
+. De *klant* geeft het identificatie plaatje van het exemplaar aan de medewerker.
+. De *medewerker* gaat na dat de klant dit exemplaar mag huren
++
+
+volgens *DR_VEV*
+. De *klant* geeft aan hoe lang hij het exemplaar wil houden.
+. De *medewerker* gaat na dat dit kan gedurende de gevraagde periode
++
+volgens *DR_EVP*
+. De *medewerker* gaat na dat de dag waarop het exemplaar teruggebracht moet
+worden, geen voorziene sluitingsdag is.
+. De *medewerker* noteert de verhuring.
+. De *medewerker* voegt de kost toe aan de lopende rekening van de klant
++
+volgens *DR_KEP*
+. De use case eindigt
+
+*Postconditie*:::
+
+Het exemplaar is in het bezit van de klant en de kosten zijn aan de lopende
+rekening van de klant toegevoegd. Het exemplaar moet niet teruggebracht
+worden op een voorziene sluitingsdag.
+
+_Merk op dat stap 6 van het basispad nodig is wegens *DR_VPS*._
+
+*Alternatief A : Stoppen*::
+
+
+. De *klant* kan op elk moment beslissen om te stoppen.
+. De *medewerker* maakt eventuele wijzigingen ongedaan.
+. De use case eindigt
+
+*Postconditie*:::
+
+Niks gewijzigd
+
+*Alternatief B : Mag niet verhuurd worden aan klant*::
+[start=3]
+. De medewerker merkt dat de klant deze titel niet mag huren.
+. De medewerker informeert de klant hierover.
+. De use case eindigt
+
+*Postconditie*:::
+
+Niks gewijzigd 
+
+*Alternatief C : Exemplaar niet verhuurbaar gedurende de gevraagde periode*:
+[start=5]
+. De *medewerker* merkt dat het exemplaar niet verhuurbaar is voor de
+gevraagde periode.
+. De *medewerker* informeert de klant hierover en vraagt om een kortere periode.
+. De use case gaat verder in stap 4 van het basispad.
+
+_Merk op dat een gelijkwaardig exemplaar zoeken in alternatief C, zinloos zou zijn
+vermits *DR_EVD* uitgedrukt is in termen van (alle) gelijkwaardige exemplaren._
+
+*Alternatief D : Exemplaar moet teruggebracht worden op sluitingsdag.*
+[start=6]
+. De *medewerker* merkt dat het exemplaar moet teruggebracht worden op een
+voorziene sluitingsdag.
+. De *medewerker* verlengt de verhuurperiode zodanig dat het exemplaar niet
+meer op een voorziene sluitingsdag moet teruggebracht worden.
+. De *medewerker* informeert de klant hierover.
+. De use case gaat verder met de volgende stap van het basispad. 
+
+_Merk op dat in alternatief D, het exemplaar sowieso verhuurbaar zal zijn op elke
+voorziene sluitingsdag, er zijn dan immers geen passende reservaties. Het is dus zeker
+dat het exemplaar verhuurbaar zal zijn in de verlengde verhuurperiode._
