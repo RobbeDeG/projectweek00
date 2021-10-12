@@ -18,18 +18,17 @@ Klant is geïdentificeerd
 . De *klant* geeft het identificatie plaatje van het exemplaar aan de medewerker.
 . De *medewerker* gaat na dat de klant dit exemplaar mag huren
 +
-
-volgens *DR_VEV*
+volgens *xref:domeinregels.adoc[DR_VEV]*
 . De *klant* geeft aan hoe lang hij het exemplaar wil houden.
 . De *medewerker* gaat na dat dit kan gedurende de gevraagde periode
 +
-volgens *DR_EVP*
+volgens *xref:domeinregels.adoc[DR_EVP]*
 . De *medewerker* gaat na dat de dag waarop het exemplaar teruggebracht moet
 worden, geen voorziene sluitingsdag is.
 . De *medewerker* noteert de verhuring.
 . De *medewerker* voegt de kost toe aan de lopende rekening van de klant
 +
-volgens *DR_KEP*
+volgens *xref:domeinregels.adoc[DR_KEP]*
 . De use case eindigt
 
 *Postconditie*:::
@@ -38,7 +37,7 @@ Het exemplaar is in het bezit van de klant en de kosten zijn aan de lopende
 rekening van de klant toegevoegd. Het exemplaar moet niet teruggebracht
 worden op een voorziene sluitingsdag.
 
-_Merk op dat stap 6 van het basispad nodig is wegens *DR_VPS*._
+_Merk op dat stap 6 van het basispad nodig is wegens *xref:domeinregels.adoc[DR_VPS]*._
 
 *Alternatief A : Stoppen*::
 
